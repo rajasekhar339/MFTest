@@ -12,7 +12,7 @@
   <property name="worklight.project.war.file" value="C:\Program Files\agent\var\work\MF - Demo - Comp\IBM_InterConnect.war"/>
   <property name="database.db2.worklight.schema" value="WRKLGHT_6"/>
   <property name="database.db2.worklight.dbname" value="TESTDB"/>
-  <property name="worklight.contextroot" value="/worklight_5"/>
+  <property name="worklight.contextroot" value="/worklight_6"/>
   <property name="wl.install.analytics.configure" value="false"/>
   <property name="database.db2.wladmin.schema" value="WLADMIN"/>
   <property name="database.db2.wladmin.username" value="mobusr4"/>
