@@ -1,0 +1,20 @@
+<project basedir="." default="deploy">
+
+  <property name="worklight-ant-deployer" location="worklight-ant-deployer.jar" />
+
+  <target name="init">
+    <taskdef resource="com/worklight/ant/deployers/antlib.xml">
+      <classpath>
+        <pathelement location="C:\Program Files\IBM\MobileFirst_Platform_Server\WorklightServer\worklight-ant-deployer.jar" />
+      </classpath>
+    </taskdef>
+  </target>
+  <target name="deploy" depends="init">
+    <wladm url="http://172.17.0.177:9081/wladmin" secure="false" user="admin" password="admin">
+      <delete-app runtime="worklight_6" name="Mobileapp"/>
+      <delete-adapter runtime="worklight_6" name="InvokingAPI"/>
+      <deploy-app runtime="worklight_6" file="C:\Program Files\agent\var\work\MF - Demo - Comp\Mobileapp.wlapp"/>
+      <deploy-adapter runtime="worklight_6" file="C:\Program Files\agent\var\work\MF - Demo - Comp\InvokingAPI.adapter"/>
+     </wladm>
+  </target> 
+</project>

@@ -1,0 +1,35 @@
+<project  basedir="." default="upload.App">
+
+  <property name="install.dir" value="../../" />
+  <property name="workspace.root" value="../../" />
+
+<!-- Server Properties -->
+  <property name="server.path" value="http://172.17.0.177:9082/" />
+  <property name="context.path" value="appcenterconsole" /> 
+  <property name="upload.file" value="C:\Program Files\agent\var\work\MF-Component\UCDTestUCDTestAndroid.apk" />
+  <property name="force" value="true" />
+
+  <!--  Authentication Properties -->
+  <property name="login.user" value="demo" />
+  <property name="login.pass" value="demo" />
+  <path id="classpath.run">
+    <fileset dir="C:\Program Files\IBM\MobileFirst_Platform_Server\ApplicationCenter\tools">
+      <include name="applicationcenterdeploytool.jar" />
+      <include name="json4j.jar"/>
+    </fileset>
+  </path>
+  <target name="upload.init">
+    <taskdef name="uploadapps" classname="com.ibm.appcenter.ant.UploadApps"> 
+      <classpath refid="classpath.run" />
+    </taskdef>
+  </target>
+  <target name="upload.App" description="Uploads a single application" depends="upload.init">
+    <uploadapps serverPath="${server.path}"
+      context="${context.path}"
+      loginUser="${login.user}"
+      loginPass="${login.pass}"
+      forceOverwrite="${force}"
+      file="${upload.file}" />
+    </target>
+  
+</project>
