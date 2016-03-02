@@ -13,7 +13,7 @@
     <wladm url="http://172.17.0.177:9081/wladmin" secure="false" user="admin" password="admin">
       <delete-app runtime="worklight" name="Mobileapp"/>
       <delete-adapter runtime="worklight" name="InvokingAPI"/>
-      <deploy-app runtime="worklight" file="C:\Program Files\agent\var\work\MF - Demo - Comp\Mobileapp.wlapp"/>
+      <deploy-app runtime="worklight" file="C:\Program Files\agent\var\work\MF - Demo - Comp\Mobileapp-all.wlapp"/>
       <deploy-adapter runtime="worklight" file="C:\Program Files\agent\var\work\MF - Demo - Comp\InvokingAPI.adapter"/>
      </wladm>
   </target> 
