@@ -11,10 +11,10 @@
   </target>
   <target name="deploy" depends="init">
     <wladm url="http://172.17.0.177:9081/wladmin" secure="false" user="admin" password="admin">
-      <delete-app runtime="worklight_6" name="Mobileapp"/>
-      <delete-adapter runtime="worklight_6" name="InvokingAPI"/>
-      <deploy-app runtime="worklight_6" file="C:\Program Files\agent\var\work\MF - Demo - Comp\Mobileapp.wlapp"/>
-      <deploy-adapter runtime="worklight_6" file="C:\Program Files\agent\var\work\MF - Demo - Comp\InvokingAPI.adapter"/>
+      <delete-app runtime="worklight" name="Mobileapp"/>
+      <delete-adapter runtime="worklight" name="InvokingAPI"/>
+      <deploy-app runtime="worklight" file="C:\Program Files\agent\var\work\MF - Demo - Comp\Mobileapp.wlapp"/>
+      <deploy-adapter runtime="worklight" file="C:\Program Files\agent\var\work\MF - Demo - Comp\InvokingAPI.adapter"/>
      </wladm>
   </target> 
 </project>
