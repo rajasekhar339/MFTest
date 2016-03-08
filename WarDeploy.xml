@@ -20,7 +20,7 @@
   <property name="database.db2.driver.dir" value="C:\Users\miracle\Downloads\db2_V9.7_java_files"/>
   <property name="database.db2.host" value="172.17.0.142"/>
   <property name="database.db2.port" value="50001"/>
-  <property name="appserver.was85liberty.serverInstance" value="UCDServer"/>
+  <property name="appserver.was85liberty.serverInstance" value="UCDTest1"/>
   <property name="appserver.was.profile" value="Liberty"/>
   <property name="appserver.was.installdir" value="C:\Program Files\ibm\WebSphere\Liberty"/>
   <property name="worklight.environment.id" value="UCD"/>
